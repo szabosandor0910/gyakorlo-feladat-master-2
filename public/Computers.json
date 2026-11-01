@@ -1,0 +1,23 @@
+[
+  {
+    "id": "PC-001",
+    "computerName": "IBM Personal Computer 5150",
+    "date": "1981.08.12",
+    "description": "A gép, amely elindította a PC-forradalmat. 4.77 MHz-es Intel 8088 processzorral és 16 KB memóriával jelent meg.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Ibm_pc_5150.jpg"
+  },
+  {
+    "id": "PC-002",
+    "computerName": "Commodore 64",
+    "date": "1982.08.01",
+    "description": "Minden idők legkelendőbb személyi számítógépe. 64 KB RAM-mal és lenyűgöző hang/kép képességekkel uralta a piacot.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Commodore-64-Computer-wDrive.jpg"
+  },
+  {
+    "id": "PC-003",
+    "computerName": "Apple Macintosh 128K",
+    "date": "1984.01.24",
+    "description": "Az első sikeres, grafikus felhasználói felülettel és egérrel rendelkező asztali számítógép a nagyközönség számára.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/82/Macintosh_128k_transparency.png"
+  }
+]

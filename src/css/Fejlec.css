@@ -1,0 +1,82 @@
+.header-logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.header-title {
+  color: #10B981; /* Retro terminál zöld */
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace; /* Retro hacker hatás */
+}
+
+/* KÖZÉPSŐ MENÜ TARTÁLYA */
+.header-nav {
+  display: flex;
+  gap: 25px; /* Távolság a menüpontok között */
+  align-items: center;
+}
+
+/* NAV LINK KIEGÉSZÍTŐ STÍLUSOK (A vizsgafeladaton felül!) */
+.nav-link {
+  color: #64748B; /* Szürkéskék alapértelmezett szín */
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 6px;
+  position: relative;
+  transition: color 0.2s ease;
+ 
+  /* MEGJEGYZÉS: A text-decoration, font-size és letter-spacing
+     tulajdonságokat a diáknak kell majd az exam.css-ben megírnia! */
+}
+
+/* Rámutatás (hover) esetén kizöldül */
+.nav-link:hover {
+  color: #10B981;
+}
+
+/* Az éppen aktív menüpont stílusa */
+.nav-link.active {
+  color: #10B981;
+}
+
+/* Az aktív menüpont alatti zöld csík */
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #10B981;
+}
+
+/* JOBB OLDAL (Kereső + Profil) */
+.header-right-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Profil ikon stílusa */
+.header-profile-icon {
+  width: 28px;
+  height: 28px;
+  color: #10B981;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.header-profile-icon:hover {
+  opacity: 0.7;
+}
+
+/* MOBIL NÉZET KIEGÉSZÍTÉS */
+@media screen and (max-width: 900px) {
+    .header-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

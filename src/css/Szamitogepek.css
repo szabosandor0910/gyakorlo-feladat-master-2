@@ -1,0 +1,18 @@
+.szamitogepek-lista {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 950px) {
+  .szamitogepek-lista { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media screen and (max-width: 650px) {
+  .szamitogepek-lista { grid-template-columns: 1fr; }
+}

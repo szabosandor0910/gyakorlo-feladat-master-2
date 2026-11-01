@@ -1,0 +1,37 @@
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  background-color: #1E293B; /* Sötét palaszürke */
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+  padding: 10px 35px 10px 15px;
+  color: #F8FAFC;
+  font-size: 13px;
+  width: 240px;
+  outline: none;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+.search-input::placeholder {
+  color: #64748B;
+}
+
+.search-input:focus {
+  background-color: #0F172A;
+  border-color: #10B981; /* Retro zöld fókusz */
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.2);
+}
+
+.search-icon {
+  position: absolute;
+  right: 12px;
+  width: 16px;
+  height: 16px;
+  color: #64748B;
+  pointer-events: none;
+}

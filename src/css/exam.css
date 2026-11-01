@@ -1,0 +1,37 @@
+/* IDE ÍRJA A FEJLÉC ÉS A NAVIGÁCIÓ FORMÁZÁSÁT A FELADATLAP ALAPJÁN! */
+
+/* 1. A Fejléc formázása */
+.pc-header {
+  /* 1.1 Háttérszín */
+  background-color: #0B1120;
+
+  /* 1.2 Flex elrendezés: függőlegesen középre, vízszintesen szélekre */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* 1.3 Belső margó: fent/lent 0, bal/jobb 30px */
+  padding: 0 30px;
+}
+
+/* 1.4 Reszponzivitás: 900px alatt egymás alatt, 20px térközzel */
+@media screen and (max-width: 900px) {
+  .pc-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* 2. A Navigációs linkek formázása */
+.nav-link {
+  /* 2.1 Aláhúzás eltüntetése */
+  text-decoration: none;
+
+  /* 2.2 Betűméret */
+  font-size: 12px;
+
+  /* 2.3 Betűköz */
+  letter-spacing: 0.5px;
+}
+
+/* ----------------------------------------------------------------- */
